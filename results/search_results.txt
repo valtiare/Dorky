@@ -1,0 +1,42 @@
+
+
+
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+
+site:None intitle:foothold
+site:None inurl:login ext:php
+site:None intitle:admin intext:password filetype:log
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+
+site:.gov filetype:txt containing usernames
+site:.gov intext:password filetype:log
+site:.gov intitle:index.of password
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+
+site:None intitle:foothold
+site:None inurl:login ext:php
+site:None intitle:admin intext:password filetype:log
+
+
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+

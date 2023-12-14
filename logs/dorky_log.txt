@@ -1,0 +1,8 @@
+
+
+
+
+site:.gov intitle:foothold
+site:.gov inurl:login ext:php
+site:.gov intitle:admin intext:password filetype:log
+
