@@ -7,8 +7,8 @@ from dork_utils import generate_dorks, get_target_domain
 from categories import categories
 from config import LOG_FILE_PATH, TOR_BROWSER_URL
 
-RESULTS_FOLDER = "results"  # Define the results folder
-DATA_FOLDER = "data"  # Define the data folder
+RESULTS_FOLDER = "results"
+DATA_FOLDER = "data"  
 
 def log_search_history(dorks, results_folder):
     result_file_path = os.path.join(results_folder, "search_results.txt")
@@ -67,7 +67,6 @@ def main():
         print("Invalid target option. Exiting.")
         return
 
-    # Added option to choose a specific site
     choose_site = input("Do you want to choose a specific site? (yes/no): ").lower()
     if choose_site == 'yes':
         target_domain = input("Enter the site you want to target (e.g., example.com): ")
@@ -96,11 +95,9 @@ def main():
     if use_tor:
         start_tor()
 
-    # Create the results folder if it doesn't exist
     if not os.path.exists(RESULTS_FOLDER):
         os.makedirs(RESULTS_FOLDER)
-
-    # Create the data folder if it doesn't exist
+        
     if not os.path.exists(DATA_FOLDER):
         os.makedirs(DATA_FOLDER)
 
@@ -119,7 +116,6 @@ def main():
 
     open_browser(urls, proxies=proxies)
 
-    # Log search history in the results folder
     log_search_history(dorks, RESULTS_FOLDER)
 
 if __name__ == "__main__":
